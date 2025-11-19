@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Enio Antonio S. Junior">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Viagem dos sonhos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Taxa</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
+    </header>
+
+    <section id="pacotes">
+        <h2>Conheça nossos pacotes</h2>
+        <ul>
+            <li>Itém 1</li>
+            <li>Itém 2</li>
+            <li>Itém 3</li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae fugit modi dolorem facere itaque enim quod
+            soluta ab, consequatur dolor voluptas qui, sit temporibus, et dignissimos veritatis blanditiis labore?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ullam aut culpa reiciendis corrupti
+            voluptatum assumenda ex, reprehenderit amet, iure iste totam! Officiis ullam rem exercitationem repellat
+            necessitatibus corrupti? Asperiores.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit blanditiis nemo laudantium veniam itaque
+            consectetur sed atque molestiae ipsam nesciunt necessitatibus reprehenderit sint quas, perferendis sapiente
+            tempora vel ex saepe!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cumque veniam hic ex, quod ab aut dignissimos
+            veritatis assumenda, minima voluptas sapiente facere vero. Iusto corrupti repellat reprehenderit dicta
+            ipsam.
+        </p>
+        <hr>
+
+        <div class="figuras">
+            <figure>
+                <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem de um chalé em Gramado">
+                <figcaption>Gramado</figcaption>
+            </figure>
+            <figure>
+                <img src="img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
+                <figcaption>Porto Seguro</figcaption>
+            </figure>
+            <figure>
+                <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+        </div>
+
+        <div class="videos">
+            <video controls width="500">
+                <source src="video/rabbit320.mp4" type="video/mp4">
+                <source src="video/rabbit320.webm" type="video/webm">
+                Seu navegador não suporta o formato do vídeo. <a href="video/rabbit320.mp4">Clicque aqui para baixar</a>
+            </video>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <h2>Taxas e Serviços</h2>
+        <table>
+            <caption>Descriçao dos serviços e respectivos valores</caption>
+
+            <thead>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Reserva de Hotel</td>
+                    <td>R$150,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de passagens</td>
+                    <td>R$100,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de carros</td>
+                    <td>R$50,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Orçamento</h2>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Dados do viagem</legend>
+                <label>Nome</label>
+                <input type="text" required name="nome"><br><br>
+
+                <label for="">Email</label>
+                <input type="email" required name="email"><br><br>
+
+
+                <label>Data de ida</label>
+                <input type="date" required name="dataIda"><br><br>
+
+                <label>Data de volta</label>
+                <input type="date" required name="dataVolta"><br><br>
+
+                <label>Quantidade de pessoas</label>
+                <input type="number" required name="qtdPessoas" min="1" max="10"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais serviços deseja contratar</legend>
+                <label>
+                    <input type="checkbox" name="passagens" value="passagens">Compra de passagens
+                </label><br>
+                <label>
+                    <input type="checkbox" name="hospedagem" value="hospedagem">Reserva de hospedagem
+                </label><br>
+                <label>
+                    <input type="checkbox" name="veiculos" value="veiculos">Reserva de veículos
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+                </label><br>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Boleto">Boleto
+                </label><br>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Pix">Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo pra pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista">Á vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option selected value="10x">10x com juros</option>
+                </select>
+            </fieldset>
+
+            <label>Comentario</label><br>
+            <textarea rows="5" name="comentario"></textarea><br>
+
+
+
+            <button>Salvar</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>Desenvolvido por Enio Antonio S. Junior</p>
+    </footer>
+
+    <hr>
+</body>
+
+</html>
