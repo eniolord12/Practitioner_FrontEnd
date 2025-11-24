@@ -1,176 +1,230 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Enio Antonio S. Junior">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Ir na página do projeto e clicar em "icons". Procurar por "cart" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Viagem dos sonhos</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Taxa</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+    <header class="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-sm bg-warning">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                                aria-expanded="false">Pacotes</a>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="#">Nacionais</a></li>
+                                <li><a class="dropdown-item" href="#">Internacionais</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Taxas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart3"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <h1>Venha realizar a viagem dos seus sonhos!</h1>
     </header>
-
-    <section id="pacotes">
-        <h2>Conheça nossos pacotes</h2>
-        <ul>
-            <li>Itém 1</li>
-            <li>Itém 2</li>
-            <li>Itém 3</li>
-        </ul>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae fugit modi dolorem facere itaque enim quod
-            soluta ab, consequatur dolor voluptas qui, sit temporibus, et dignissimos veritatis blanditiis labore?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ullam aut culpa reiciendis corrupti
-            voluptatum assumenda ex, reprehenderit amet, iure iste totam! Officiis ullam rem exercitationem repellat
-            necessitatibus corrupti? Asperiores.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit blanditiis nemo laudantium veniam itaque
-            consectetur sed atque molestiae ipsam nesciunt necessitatibus reprehenderit sint quas, perferendis sapiente
-            tempora vel ex saepe!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cumque veniam hic ex, quod ab aut dignissimos
-            veritatis assumenda, minima voluptas sapiente facere vero. Iusto corrupti repellat reprehenderit dicta
-            ipsam.
-        </p>
-        <hr>
-
-        <div class="figuras">
-            <figure>
-                <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem de um chalé em Gramado">
-                <figcaption>Gramado</figcaption>
-            </figure>
-            <figure>
-                <img src="img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
-                <figcaption>Porto Seguro</figcaption>
-            </figure>
-            <figure>
-                <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
-                <figcaption>Rio de Janeiro</figcaption>
-            </figure>
+    <main class="container">
+        <div class="py-5 text-center">
+            <h2>Finalizar pedido</h2>
         </div>
 
-        <div class="videos">
-            <video controls width="500">
-                <source src="video/rabbit320.mp4" type="video/mp4">
-                <source src="video/rabbit320.webm" type="video/webm">
-                Seu navegador não suporta o formato do vídeo. <a href="video/rabbit320.mp4">Clicque aqui para baixar</a>
-            </video>
+        <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Carrinho de compras</span>
+                    <span class="badge bg-primary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Gramado</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$5.000,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Porto Seguro</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$4.000,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Rio de Janeiro</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$2.000,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Código promocional</h6>
+                            <small>EXAMPLECODE</small>
+                        </div>
+                        <span class="text-success">−$500</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total</span>
+                        <strong>$10.500,00</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code">
+                        <button type="submit" class="btn btn-secondary">Resgatar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Endereço de entrega</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Cidade</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Estado</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Choose...</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Método de pagamento</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                required>
+                            <label class="form-check-label" for="credit">Cartão de crédito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Cartão de débito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">Pix</label>
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Nome no cartão</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted">Full name as displayed on card</small>
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Número do cartão de crédito</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Data de expiração</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Expiration date required
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">Código de segurança</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Finalizar compra</button>
+                </form>
+            </div>
         </div>
-
-    </section>
-
-
-
-    <section>
-        <h2>Taxas e Serviços</h2>
-        <table>
-            <caption>Descriçao dos serviços e respectivos valores</caption>
-
-            <thead>
-                <tr>
-                    <th>Serviços</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Reserva de Hotel</td>
-                    <td>R$150,00</td>
-                </tr>
-                <tr>
-                    <td>Compra de passagens</td>
-                    <td>R$100,00</td>
-                </tr>
-                <tr>
-                    <td>Aluguel de carros</td>
-                    <td>R$50,00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section>
-        <h2>Orçamento</h2>
-        <form method="get" action="">
-            <fieldset>
-                <legend>Dados do viagem</legend>
-                <label>Nome</label>
-                <input type="text" required name="nome"><br><br>
-
-                <label for="">Email</label>
-                <input type="email" required name="email"><br><br>
-
-
-                <label>Data de ida</label>
-                <input type="date" required name="dataIda"><br><br>
-
-                <label>Data de volta</label>
-                <input type="date" required name="dataVolta"><br><br>
-
-                <label>Quantidade de pessoas</label>
-                <input type="number" required name="qtdPessoas" min="1" max="10"><br><br>
-            </fieldset>
-
-            <fieldset>
-                <legend>Quais serviços deseja contratar</legend>
-                <label>
-                    <input type="checkbox" name="passagens" value="passagens">Compra de passagens
-                </label><br>
-                <label>
-                    <input type="checkbox" name="hospedagem" value="hospedagem">Reserva de hospedagem
-                </label><br>
-                <label>
-                    <input type="checkbox" name="veiculos" value="veiculos">Reserva de veículos
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Escolha a forma de pagamento</legend>
-                <label>
-                    <input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
-                </label><br>
-                <label>
-                    <input type="radio" name="formaPagamento" value="Boleto">Boleto
-                </label><br>
-                <label>
-                    <input type="radio" name="formaPagamento" value="Pix">Pix
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Escolha o prazo pra pagamento</legend>
-                <select name="prazoPagamento">
-                    <option value="aVista">Á vista</option>
-                    <option value="5x">5x sem juros</option>
-                    <option selected value="10x">10x com juros</option>
-                </select>
-            </fieldset>
-
-            <label>Comentario</label><br>
-            <textarea rows="5" name="comentario"></textarea><br>
-
-
-
-            <button>Salvar</button>
-        </form>
-    </section>
-
-
-    <footer>
-        <p>Desenvolvido por Enio Antonio S. Junior</p>
+    </main>
+    <footer class="container-fluid bg-warning text-center">
+        Desenvolvido por Enio Antonio S. Junior - &copy; 2025
     </footer>
-
-    <hr>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
